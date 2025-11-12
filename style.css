@@ -283,3 +283,91 @@ footer {
         height: 55px;
     }
 }
+/* RESPONSIVIDADE ADICIONAL */
+@media (max-width: 1024px) {
+    nav {
+        padding: 15px 7%;
+    }
+
+    .hero {
+        padding: 0 7%;
+    }
+
+    .hero-text {
+        max-width: 400px;
+    }
+
+    .hero-img img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projetos {
+        gap: 20px;
+    }
+
+    .card {
+        width: 250px;
+    }
+
+    .tech-icons {
+        gap: 30px;
+    }
+
+    .tech img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .hero-img img {
+        width: 140px;
+        height: 140px;
+        margin-top: 20px;
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+
+    .projetos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .tech-icons {
+        gap: 20px;
+    }
+
+    .tech img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social a {
+        padding: 8px 15px;
+        margin: 5px;
+    }
+}
