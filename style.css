@@ -283,74 +283,39 @@ footer {
         height: 55px;
     }
 }
-
-/* HERO */
-.hero {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 10%; /* reduzido de 0 10% para encostar menos o texto na borda */
-    flex-wrap: wrap;
-    gap: 20px; /* adiciona espaço uniforme entre texto e imagem */
-}
-
-.hero-text {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px; /* reduz o espaçamento entre os textos */
-}
-
-.hero-text h2 {
-    margin-bottom: 10px; /* reduz espaço abaixo do título */
-}
-
-.hero-text p {
-    margin-bottom: 15px; /* reduz espaço abaixo do subtítulo */
-}
-
-/* Botões dentro do hero */
-.hero-text .btn,
-.hero-text .btn-cv {
-    margin-top: 10px; /* menor espaçamento do botão em relação ao texto */
-}
-
-/* Foto do Hero */
-.hero-img img {
-    width: 200px; /* ajuste de tamanho menor */
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #00ffff;
-    transform: rotate(-5deg);
-    box-shadow: 0 0 20px #00ffff40;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* RESPONSIVO */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
         text-align: center;
-        gap: 15px; /* reduz ainda mais no mobile */
         padding: 40px 5%;
-    }
-
-    .hero-img img {
-        margin-top: 20px;
-        width: 150px;
-        height: 150px;
-        transform: rotate(0deg);
+        gap: 15px;
     }
 
     .hero-text {
-        gap: 10px;
+        max-width: 100%;
+        gap: 8px; /* mantém textos mais próximos entre si */
+        margin-bottom: 15px; /* espaço entre texto e botão */
+    }
+
+    .hero-text h2 {
+        margin-bottom: 5px; /* reduz ainda mais o espaço do título */
+        font-size: 1.8em;
+    }
+
+    .hero-text p {
+        margin-bottom: 10px; /* menor espaço entre subtítulo e descrição */
+        font-size: 0.95em;
     }
 
     .hero-text .btn,
     .hero-text .btn-cv {
-        margin-top: 8px;
+        margin-top: 10px; /* adiciona um espaçamento uniforme em relação ao texto */
+    }
+
+    .hero-img img {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px; /* mantém a foto levemente abaixo do texto */
+        transform: rotate(0deg);
     }
 }
