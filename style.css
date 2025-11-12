@@ -283,39 +283,3 @@ footer {
         height: 55px;
     }
 }
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-        gap: 15px;
-    }
-
-    .hero-text {
-        max-width: 100%;
-        gap: 8px; /* mantém textos mais próximos entre si */
-        margin-bottom: 15px; /* espaço entre texto e botão */
-    }
-
-    .hero-text h2 {
-        margin-bottom: 5px; /* reduz ainda mais o espaço do título */
-        font-size: 1.8em;
-    }
-
-    .hero-text p {
-        margin-bottom: 10px; /* menor espaço entre subtítulo e descrição */
-        font-size: 0.95em;
-    }
-
-    .hero-text .btn,
-    .hero-text .btn-cv {
-        margin-top: 10px; /* adiciona um espaçamento uniforme em relação ao texto */
-    }
-
-    .hero-img img {
-        width: 150px;
-        height: 150px;
-        margin-top: 20px; /* mantém a foto levemente abaixo do texto */
-        transform: rotate(0deg);
-    }
-}
