@@ -283,3 +283,74 @@ footer {
         height: 55px;
     }
 }
+
+/* HERO */
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%; /* reduzido de 0 10% para encostar menos o texto na borda */
+    flex-wrap: wrap;
+    gap: 20px; /* adiciona espaço uniforme entre texto e imagem */
+}
+
+.hero-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px; /* reduz o espaçamento entre os textos */
+}
+
+.hero-text h2 {
+    margin-bottom: 10px; /* reduz espaço abaixo do título */
+}
+
+.hero-text p {
+    margin-bottom: 15px; /* reduz espaço abaixo do subtítulo */
+}
+
+/* Botões dentro do hero */
+.hero-text .btn,
+.hero-text .btn-cv {
+    margin-top: 10px; /* menor espaçamento do botão em relação ao texto */
+}
+
+/* Foto do Hero */
+.hero-img img {
+    width: 200px; /* ajuste de tamanho menor */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00ffff;
+    transform: rotate(-5deg);
+    box-shadow: 0 0 20px #00ffff40;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px; /* reduz ainda mais no mobile */
+        padding: 40px 5%;
+    }
+
+    .hero-img img {
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+        transform: rotate(0deg);
+    }
+
+    .hero-text {
+        gap: 10px;
+    }
+
+    .hero-text .btn,
+    .hero-text .btn-cv {
+        margin-top: 8px;
+    }
+}
