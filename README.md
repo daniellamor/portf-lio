@@ -6,6 +6,7 @@ Portfólio pessoal desenvolvido para apresentar projetos, habilidades técnicas 
 - HTML5
 - CSS3
 - JavaScript
+- PHP
 
 ## 📌 Funcionalidades
 - Layout responsivo
