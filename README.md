@@ -14,7 +14,7 @@ Portfólio pessoal desenvolvido para apresentar projetos, habilidades técnicas 
 - Design moderno
 
 ## 🌐 Acesso
-🔗 https://daniellamor.github.io/nome-do-repo
+🔗 [https://daniellamor.github.io/nome-do-repo](https://daniellamor.github.io/portf-lio/)
 
 ## 👩‍💻 Autora
 Daniella Morais
